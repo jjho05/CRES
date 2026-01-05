@@ -6,11 +6,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>CRES - Comunidad Reformada de Estudios Superiores</title>
     <meta name="description"
-        content="CRES - Seminario Teológico de la Iglesia Presbiteriana Asociada Reformada de México. Formación bíblica y teológica reformada para el ministerio.">
+        content="Seminario teológico reformado en México. Formación bíblica para líderes ministeriales.">
     <link href="logo-cres.png" rel="icon" type="image/png" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <!-- Fuentes elegantes serif para seminario -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet" />
@@ -63,193 +62,236 @@
 <body class="bg-[var(--background-color)] text-[var(--text-primary)]">
     <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
         <div class="flex h-full grow flex-col">
-            <!-- Header Component -->
             <div id="header-placeholder"></div>
 
-            <!-- CONTENIDO PRINCIPAL -->
             <main class="flex-1">
-                <!-- HERO SECTION CON CITA BÍBLICA -->
-                <section class="relative bg-[var(--background-soft)] py-20 text-center">
-                    <div class="container mx-auto px-4 max-w-4xl">
-                        <div class="mb-8 flex justify-center">
-                            <img src="logo-cres.png" alt="Logo CRES" class="h-20 w-auto opacity-90">
+                <!-- BIBLICAL QUOTE HERO -->
+                <section
+                    class="relative bg-gradient-to-br from-[var(--cres-navy)] via-[var(--cres-navy-dark)] to-[#0f1419] text-white py-12 md:py-16 overflow-hidden">
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="absolute inset-0"
+                            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
                         </div>
-                        <h1
-                            class="text-3xl md:text-4xl lg:text-5xl font-normal text-[var(--text-primary)] mb-8 leading-relaxed px-4">
-                            "PROCURA CON DILIGENCIA PRESENTARTE A DIOS APROBADO, COMO OBRERO QUE NO TIENE DE QUÉ
-                            AVERGONZARSE, QUE USA BIEN LA PALABRA DE VERDAD."
-                        </h1>
-                        <p class="text-lg text-[var(--secondary-color)] font-semibold tracking-wide">
-                            2 TIMOTEO 2:15
-                        </p>
+                    </div>
+                    <div class="container mx-auto px-4 max-w-4xl relative z-10">
+                        <div class="text-center">
+                            <p
+                                class="text-xs md:text-sm uppercase tracking-widest text-[var(--cres-gold)] mb-4 font-semibold">
+                                2 Timoteo 2:15</p>
+                            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight elegant-italic">
+                                "Procura con diligencia presentarte a Dios aprobado, como obrero que no tiene de qué
+                                avergonzarse, que usa bien la palabra de verdad."
+                            </h1>
+                        </div>
                     </div>
                 </section>
 
-                <!-- HERO PRINCIPAL -->
+                <!-- MAIN HERO -->
                 <section
-                    class="relative flex min-h-[70vh] items-center justify-start bg-cover bg-center text-[var(--text-primary)]"
-                    style='background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920"); background-position: right center;'>
-                    <div class="absolute inset-0 bg-white/75"></div>
-                    <div class="container mx-auto px-4 relative z-10 max-w-6xl">
-                        <div class="max-w-xl">
-                            <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-[var(--text-primary)]">
-                                FORMACIÓN BÍBLICA PARA UNA VIDA DE MINISTERIO
-                            </h2>
-                            <p class="text-xl md:text-2xl text-[var(--text-secondary)] mb-8 leading-relaxed">
-                                Equipamos pastores, consejeros y líderes ministeriales para una vida de servicio fiel.
+                    class="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1200');">
+                    <div class="container mx-auto px-4 text-center text-white relative z-10">
+                        <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            FORMACIÓN BÍBLICA PARA<br>UNA VIDA DE MINISTERIO
+                        </h2>
+                        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                            Equipando líderes ministeriales con una sólida formación teológica reformada
+                        </p>
+                        <a href="programas.html"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-gold-dark)] transition-all transform hover:scale-105 uppercase tracking-wide shadow-xl">
+                            Explorar Programas
+                        </a>
+                    </div>
+                </section>
+
+                <!-- LA EXPERIENCIA CRES -->
+                <section class="py-16 md:py-24 bg-white">
+                    <div class="container mx-auto px-4 max-w-6xl">
+                        <div class="text-center mb-12 md:mb-16">
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-primary)] mb-4">La
+                                Experiencia CRES</h2>
+                            <p class="text-lg md:text-xl text-[var(--text-secondary)] max-w-3xl mx-auto">
+                                Una formación integral que combina excelencia académica, profundidad espiritual y
+                                compromiso ministerial
                             </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                            <!-- Card 1 -->
+                            <div
+                                class="group relative overflow-hidden rounded-lg shadow-xl h-64 md:h-80 transform transition-all duration-300 hover:scale-105">
+                                <div class="absolute inset-0 bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1519791883288-dc8bd696e667?q=80&w=800');">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/90 transition-all duration-300">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                                    <h3 class="text-2xl md:text-3xl font-bold mb-3">Fidelidad Bíblica</h3>
+                                    <p class="text-sm md:text-base opacity-90">Comprometidos con la enseñanza fiel de
+                                        las Sagradas Escrituras</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="group relative overflow-hidden rounded-lg shadow-xl h-64 md:h-80 transform transition-all duration-300 hover:scale-105">
+                                <div class="absolute inset-0 bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800');">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/90 transition-all duration-300">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                                    <h3 class="text-2xl md:text-3xl font-bold mb-3">Formación Espiritual</h3>
+                                    <p class="text-sm md:text-base opacity-90">Cultivando corazones transformados por el
+                                        Evangelio</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="group relative overflow-hidden rounded-lg shadow-xl h-64 md:h-80 transform transition-all duration-300 hover:scale-105">
+                                <div class="absolute inset-0 bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800');">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/90 transition-all duration-300">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                                    <h3 class="text-2xl md:text-3xl font-bold mb-3">Excelencia Pastoral</h3>
+                                    <p class="text-sm md:text-base opacity-90">Preparando líderes competentes para el
+                                        ministerio</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div
+                                class="group relative overflow-hidden rounded-lg shadow-xl h-64 md:h-80 transform transition-all duration-300 hover:scale-105">
+                                <div class="absolute inset-0 bg-cover bg-center"
+                                    style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=800');">
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:from-black/90 transition-all duration-300">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                                    <h3 class="text-2xl md:text-3xl font-bold mb-3">Compromiso Cultural</h3>
+                                    <p class="text-sm md:text-base opacity-90">Respondiendo fielmente a los desafíos
+                                        contemporáneos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LA IGLESIA MERECE -->
+                <section class="py-16 md:py-24 bg-[var(--background-soft)]">
+                    <div class="container mx-auto px-4 max-w-6xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                            <div class="order-2 lg:order-1">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800"
+                                    alt="Formación Ministerial" class="rounded-lg shadow-2xl w-full h-auto">
+                            </div>
+                            <div class="order-1 lg:order-2">
+                                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--primary-color)] mb-6">
+                                    La Iglesia Merece Líderes Capacitados
+                                </h2>
+                                <p class="text-lg text-[var(--text-secondary)] mb-6 leading-relaxed">
+                                    En CRES creemos que la iglesia de Cristo merece pastores, ancianos y líderes que
+                                    manejen con precisión la Palabra de Dios.
+                                    Nuestro compromiso es equipar a hombres y mujeres con una formación teológica
+                                    sólida, arraigada en las Escrituras y la tradición reformada.
+                                </p>
+                                <p class="text-lg text-[var(--text-secondary)] mb-8 leading-relaxed">
+                                    Ya sea que sirvas en tu iglesia local, sientas el llamado al ministerio pastoral, o
+                                    desees profundizar en tu conocimiento bíblico,
+                                    CRES ofrece programas diseñados para tu contexto y necesidades.
+                                </p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="programas.html"
+                                        class="inline-flex items-center justify-center px-6 py-3 bg-[var(--primary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-all uppercase tracking-wide text-center">
+                                        Ver Programas Académicos
+                                    </a>
+                                    <a href="contacto.html"
+                                        class="inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-[var(--primary-color)] text-[var(--primary-color)] font-semibold rounded-md hover:bg-[var(--primary-color)] hover:text-white transition-all uppercase tracking-wide text-center">
+                                        Solicitar Información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- NUESTRO CURRÍCULO -->
+                <section
+                    class="py-16 md:py-24 bg-gradient-to-br from-[var(--cres-navy)] to-[var(--cres-navy-dark)] text-white">
+                    <div class="container mx-auto px-4 max-w-4xl text-center">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Nuestro Currículo Está Diseñado
+                            Para:</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12">
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-lg border border-white/20 hover:bg-white/20 transition-all">
+                                <div class="text-4xl md:text-5xl mb-4">📖</div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3">Hacerte Crecer en tu Caminar con Cristo
+                                </h3>
+                                <p class="text-sm md:text-base opacity-90">Profundizando tu relación personal con Dios a
+                                    través de su Palabra</p>
+                            </div>
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-lg border border-white/20 hover:bg-white/20 transition-all">
+                                <div class="text-4xl md:text-5xl mb-4">⛪</div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3">Equiparte para Predicar y Enseñar la
+                                    Biblia</h3>
+                                <p class="text-sm md:text-base opacity-90">Desarrollando habilidades para comunicar
+                                    fielmente las Escrituras</p>
+                            </div>
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-lg border border-white/20 hover:bg-white/20 transition-all">
+                                <div class="text-4xl md:text-5xl mb-4">🎓</div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3">Desarrollar una Perspectiva Teológica
+                                    Arraigada en las Escrituras</h3>
+                                <p class="text-sm md:text-base opacity-90">Formando un pensamiento teológico coherente y
+                                    bíblico</p>
+                            </div>
+                            <div
+                                class="bg-white/10 backdrop-blur-sm p-6 md:p-8 rounded-lg border border-white/20 hover:bg-white/20 transition-all">
+                                <div class="text-4xl md:text-5xl mb-4">💪</div>
+                                <h3 class="text-xl md:text-2xl font-bold mb-3">Mejorar tus Habilidades Ministeriales
+                                </h3>
+                                <p class="text-sm md:text-base opacity-90">Preparándote para servir con excelencia en
+                                    diversos contextos</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FINAL CTA -->
+                <section class="py-16 md:py-20 bg-white">
+                    <div class="container mx-auto px-4 text-center max-w-3xl">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-6">
+                            ¿Listo para Comenzar tu Formación?
+                        </h2>
+                        <p class="text-lg md:text-xl text-[var(--text-secondary)] mb-8">
+                            Descubre cómo CRES puede equiparte para una vida de ministerio fiel y fructífero
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
                             <a href="programas.html"
-                                class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[var(--secondary-color)] rounded-md shadow-lg transition-all hover:bg-[var(--cres-gold-dark)] uppercase tracking-wide">
+                                class="inline-flex items-center justify-center px-8 py-4 bg-[var(--primary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-all transform hover:scale-105 uppercase tracking-wide shadow-lg">
+                                Ver Programas
+                            </a>
+                            <a href="contacto.html"
+                                class="inline-flex items-center justify-center px-8 py-4 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-gold-dark)] transition-all transform hover:scale-105 uppercase tracking-wide shadow-lg">
                                 Solicitar Información
                             </a>
                         </div>
                     </div>
                 </section>
-
-                <!-- LA EXPERIENCIA CRES -->
-                <section class="py-20 bg-white">
-                    <div class="container mx-auto px-4 max-w-6xl">
-                        <div class="text-center mb-16">
-                            <h2 class="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-4">
-                                LA EXPERIENCIA CRES
-                            </h2>
-                            <p class="text-lg text-[var(--text-secondary)] max-w-3xl mx-auto">
-                                Muchos no perseveran en el ministerio porque se sienten frustrados y mal preparados. En
-                                CRES, nuestra formación integral produce pastores y líderes capaces. El resultado es que
-                                tendrás un impacto duradero mientras la iglesia recibe el liderazgo fiel que merece.
-                            </p>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <!-- Card 1 -->
-                            <div class="relative overflow-hidden rounded-lg shadow-lg group h-80">
-                                <div class="absolute inset-0 bg-cover bg-center transition-transform group-hover:scale-105"
-                                    style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600');">
-                                </div>
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-[var(--accent-color)] via-[var(--accent-color)]/80 to-transparent">
-                                </div>
-                                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
-                                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Fidelidad Bíblica</h3>
-                                    <p class="text-sm leading-relaxed">
-                                        Aprende la Biblia de quienes la aman profundamente. Nuestra facultad está
-                                        comprometida con la enseñanza fiel de las Escrituras.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Card 2 -->
-                            <div class="relative overflow-hidden rounded-lg shadow-lg group h-80">
-                                <div class="absolute inset-0 bg-cover bg-center transition-transform group-hover:scale-105"
-                                    style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600');">
-                                </div>
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-[var(--accent-color)] via-[var(--accent-color)]/80 to-transparent">
-                                </div>
-                                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
-                                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Formación Espiritual</h3>
-                                    <p class="text-sm leading-relaxed">
-                                        Nuestro enfoque integral te ayuda a acercarte a Jesús. Crecerás en profundidad
-                                        emocional y espiritual mientras estudias la Biblia.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Card 3 -->
-                            <div class="relative overflow-hidden rounded-lg shadow-lg group h-80">
-                                <div class="absolute inset-0 bg-cover bg-center transition-transform group-hover:scale-105"
-                                    style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600');">
-                                </div>
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-[var(--accent-color)] via-[var(--accent-color)]/80 to-transparent">
-                                </div>
-                                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
-                                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Excelencia Pastoral</h3>
-                                    <p class="text-sm leading-relaxed">
-                                        Nuestra facultad no solo son eruditos bíblicos, son pastores que te enseñan cómo
-                                        servir a la Iglesia mientras manejas correctamente la Palabra.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Card 4 -->
-                            <div class="relative overflow-hidden rounded-lg shadow-lg group h-80">
-                                <div class="absolute inset-0 bg-cover bg-center transition-transform group-hover:scale-105"
-                                    style="background-image: url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600');">
-                                </div>
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-[var(--accent-color)] via-[var(--accent-color)]/80 to-transparent">
-                                </div>
-                                <div class="absolute inset-0 p-6 flex flex-col justify-end text-white">
-                                    <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Compromiso Cultural</h3>
-                                    <p class="text-sm leading-relaxed">
-                                        Aprende a aplicar el evangelio al mundo que te rodea. Crecerás en tu capacidad
-                                        de alcanzar efectivamente a los no creyentes para Cristo.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center mt-12">
-                            <a href="programas.html"
-                                class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white bg-[var(--secondary-color)] rounded-md shadow-lg transition-all hover:bg-[var(--cres-gold-dark)] uppercase tracking-wide">
-                                Solicitar Ahora
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- LA IGLESIA MERECE LÍDERES CAPACITADOS -->
-                <section class="py-20 bg-[var(--background-soft)]">
-                    <div class="container mx-auto px-4 max-w-6xl">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div class="order-2 lg:order-1">
-                                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800"
-                                    alt="Graduados" class="rounded-lg shadow-xl w-full">
-                            </div>
-                            <div class="order-1 lg:order-2">
-                                <h2 class="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-6">
-                                    LA IGLESIA MERECE LÍDERES CAPACITADOS.
-                                </h2>
-                                <p class="text-lg text-[var(--text-secondary)] mb-6 leading-relaxed">
-                                    Los líderes de la iglesia deben estar equipados en la Biblia, habilidades
-                                    ministeriales y comprometidos con el crecimiento espiritual, tanto para ellos mismos
-                                    como para otros. Sin embargo, muchos líderes no perseveran en el ministerio porque
-                                    les falta una de estas áreas.
-                                </p>
-                                <h3 class="text-xl font-bold text-[var(--text-primary)] mb-4 uppercase tracking-wide">
-                                    Nuestro currículo está diseñado para:
-                                </h3>
-                                <ul class="space-y-3 text-[var(--text-secondary)]">
-                                    <li class="flex items-start gap-3">
-                                        <span class="text-[var(--secondary-color)] mt-1">•</span>
-                                        <span>Hacerte crecer en tu caminar con Cristo</span>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <span class="text-[var(--secondary-color)] mt-1">•</span>
-                                        <span>Equiparte para predicar y enseñar la Biblia</span>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <span class="text-[var(--secondary-color)] mt-1">•</span>
-                                        <span>Desarrollar una perspectiva teológica arraigada en las Escrituras</span>
-                                    </li>
-                                    <li class="flex items-start gap-3">
-                                        <span class="text-[var(--secondary-color)] mt-1">•</span>
-                                        <span>Mejorar tus habilidades ministeriales</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
 
-            <!-- Footer Component -->
             <div id="footer-placeholder"></div>
         </div>
     </div>
 
-    <!-- Component Loader Scripts -->
     <script src="js/components-loader.js"></script>
     <script src="js/menu.js"></script>
 </body>

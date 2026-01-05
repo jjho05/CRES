@@ -1,289 +1,169 @@
- 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Nosotros - ITCM</title>
-    <!-- NUEVA: Meta descripción para SEO -->
-    <meta name="description" content="Conoce la historia, misión, visión y logros de la carrera de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Ciudad Madero.">
-    <link href="https://www.cdmadero.tecnm.mx/images/favicon.png" rel="icon" type="image/png"/>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="css/styles.css" rel="stylesheet"/>
-    <!-- Tipografías Oficiales TecNM -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Nosotros - CRES</title>
+    <meta name="description"
+        content="Conoce CRES - Comunidad Reformada de Estudios Superiores, seminario de la Iglesia Presbiteriana Asociada Reformada de México.">
+    <link href="logo-cres.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style type="text/tailwindcss">
         :root {
-            --primary-color: #1B396A;
-            --secondary-color: #14305C;
-            --accent-color: #f0f2f4;
-            --text-primary: #000000;
-            --text-secondary: #807F83;
-            --background-color: #ffffff;
-            --border-color: #dce0e5;
+            --cres-burgundy: #8B1A1A; --cres-gold: #C9A961; --cres-navy: #2C3E50;
+            --cres-cream: #F8F6F1; --primary-color: var(--cres-burgundy);
+            --secondary-color: var(--cres-gold); --accent-color: var(--cres-navy);
+            --text-primary: #2C3E50; --text-secondary: #5A6C7D;
         }
-        body {
-            font-family: "Noto Sans", sans-serif;
-        }
-    
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-        }
+        body { font-family: "Crimson Text", "Georgia", serif; font-size: 18px; line-height: 1.7; }
+        h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", "Georgia", serif; font-weight: 700; }
     </style>
 </head>
-<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
-    <div class="flex h-full grow flex-col">
-        <!-- Header Component -->
-        <div id="header-placeholder"></div>
-        
-        <!-- CONTENIDO PRINCIPAL ADAPTADO -->
-        <main class="flex-1 bg-[var(--accent-color)] py-12 px-4 sm:px-6 lg:px-8">
-            <div class="mx-auto max-w-7xl">
-                <div class="rounded-lg bg-white p-8 shadow-sm">
-                    <div class="mb-10 text-center">
-                        <h1 class="text-4xl font-bold tracking-tight text-[var(--secondary-color)] sm:text-5xl">Nosotros</h1>
-                        <p class="mt-4 text-lg text-[var(--text-secondary)]">Conoce la historia, logros y evolución de la carrera de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Ciudad Madero.</p>
+
+<body class="bg-white text-[var(--text-primary)]">
+    <div class="relative flex size-full min-h-screen flex-col">
+        <div class="flex h-full grow flex-col">
+            <div id="header-placeholder"></div>
+            <main class="flex-1">
+                <section class="relative bg-[var(--cres-cream)] py-16 text-center">
+                    <div class="container mx-auto px-4 max-w-4xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-4">NOSOTROS</h1>
+                        <p class="text-xl text-[var(--text-secondary)]">Comunidad Reformada de Estudios Superiores</p>
                     </div>
+                </section>
 
-                    <section>
-                        <h2 class="mb-12 text-3xl font-bold text-center text-[var(--secondary-color)]">Nuestra Historia</h2>
-                        <div class="relative">
-                            <!-- Línea de tiempo vertical -->
-                            <div class="absolute left-1/2 h-full w-0.5 bg-gray-200"></div>
-                            
-                            <!-- Contenedor de los hitos -->
-                            <div class="relative flex flex-col gap-y-12">
-                                <!-- Hito 1: Fundación -->
-                                <div class="relative flex items-center">
-                                    <div class="w-1/2 pr-8 text-right">
-                                        <div class="p-6 bg-white rounded-lg border-2 border-[var(--primary-color)] shadow-md">
-                                            <h3 class="text-xl font-bold text-[var(--text-primary)]">1986 - Fundación</h3>
-                                            <p class="mt-2 text-[var(--text-secondary)]">Se funda la carrera de Ingeniería en Sistemas Computacionales en el ITCM, respondiendo a la creciente demanda de profesionales altamente capacitados en el área de la computación en la región y el país.</p>
-                                        </div>
-                                    </div>
-                                    <div class="absolute left-1/2 -translate-x-1/2 size-8 rounded-full bg-[var(--primary-color)] border-4 border-white flex items-center justify-center text-white">
-                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" /></svg>
-                                    </div>
-                                    <div class="w-1/2 pl-8"></div>
-                                </div>
-                                <!-- Hito 2: Primera Generación -->
-                                <div class="relative flex items-center">
-                                    <div class="w-1/2 pr-8"></div>
-                                    <div class="absolute left-1/2 -translate-x-1/2 size-8 rounded-full bg-[var(--primary-color)] border-4 border-white flex items-center justify-center text-white">
-                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" /></svg>
-                                    </div>
-                                    <div class="w-1/2 pl-8">
-                                        <div class="p-6 bg-white rounded-lg border-2 border-[var(--primary-color)] shadow-md">
-                                            <h3 class="text-xl font-bold text-[var(--text-primary)]">1993 - Primera Generación de Egresados</h3>
-                                            <p class="mt-2 text-[var(--text-secondary)]">Un momento histórico para la institución: egresa la primera generación de Ingenieros en Sistemas Computacionales, quienes rápidamente se integran al mercado laboral, dejando huella en la industria local y nacional.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Hito 3: Actualización Plan -->
-                                <div class="relative flex items-center">
-                                    <div class="w-1/2 pr-8 text-right">
-                                        <div class="p-6 bg-white rounded-lg border-2 border-[var(--primary-color)] shadow-md">
-                                            <h3 class="text-xl font-bold text-[var(--text-primary)]">2004 - Actualización Mayor del Plan de Estudios</h3>
-                                            <p class="mt-2 text-[var(--text-secondary)]">Para mantener la relevancia y competitividad, se implementa una importante actualización al plan de estudios, incorporando módulos y materias enfocadas en nuevas tecnologías emergentes como el desarrollo web, las redes de datos y las bases de datos distribuidas.</p>
-                                        </div>
-                                    </div>
-                                    <div class="absolute left-1/2 -translate-x-1/2 size-8 rounded-full bg-[var(--primary-color)] border-4 border-white flex items-center justify-center text-white">
-                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.186m-1.5.186a6.01 6.01 0 0 1-1.5-.186m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.354a15.996 15.996 0 0 1-4.5 0m4.5-4.5v5.25m0-5.25a6.01 6.01 0 0 0 1.5-.186m-1.5.186a6.01 6.01 0 0 1-1.5-.186m0 0a6.002 6.002 0 0 1-2.223-1.664M9 12l3-3m0 0 3 3m-3-3v12.75" /></svg>
-                                    </div>
-                                    <div class="w-1/2 pl-8"></div>
-                                </div>
-                                <!-- Hito 4: Acreditación -->
-                                <div class="relative flex items-center">
-                                    <div class="w-1/2 pr-8"></div>
-                                    <div class="absolute left-1/2 -translate-x-1/2 size-8 rounded-full bg-[var(--primary-color)] border-4 border-white flex items-center justify-center text-white">
-                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" /></svg>
-                                    </div>
-                                    <div class="w-1/2 pl-8">
-                                        <div class="p-6 bg-white rounded-lg border-2 border-[var(--primary-color)] shadow-md">
-                                            <h3 class="text-xl font-bold text-[var(--text-primary)]">2010 - Acreditación Nacional por CACEI</h3>
-                                            <p class="mt-2 text-[var(--text-secondary)]">El programa recibe la prestigiosa acreditación por parte del Consejo de Acreditación de la Enseñanza de la Ingeniería (CACEI), reconociendo su alta calidad educativa y el cumplimiento de los estándares de excelencia en la formación de ingenieros.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Hito 5: Especialidades -->
-                                <div class="relative flex items-center">
-                                    <div class="w-1/2 pr-8 text-right">
-                                        <div class="p-6 bg-white rounded-lg border-2 border-[var(--primary-color)] shadow-md">
-                                            <h3 class="text-xl font-bold text-[var(--text-primary)]">2018 - Innovación con Especialidades</h3>
-                                            <p class="mt-2 text-[var(--text-secondary)]">En respuesta a la evolución del sector tecnológico, se introducen especialidades clave como Big Data con Inteligencia de Negocios y Tecnologías Web y Móviles, permitiendo a los estudiantes profundizar en áreas de alta demanda y relevancia global.</p>
-                                        </div>
-                                    </div>
-                                    <div class="absolute left-1/2 -translate-x-1/2 size-8 rounded-full bg-[var(--primary-color)] border-4 border-white flex items-center justify-center text-white">
-                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h12A2.25 2.25 0 0 0 20.25 14.25V3M3.75 21h16.5M16.5 3.75h.008v.008h-.008V3.75Z" /></svg>
-                                    </div>
-                                    <div class="w-1/2 pl-8"></div>
-                                </div>
-                                <!-- Hito 6: Presente -->
-                                <div class="relative flex items-center">
-                                    <div class="w-1/2 pr-8"></div>
-                                    <div class="absolute left-1/2 -translate-x-1/2 size-8 rounded-full bg-[var(--primary-color)] border-4 border-white flex items-center justify-center text-white">
-                                        <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
-                                    </div>
-                                    <div class="w-1/2 pl-8">
-                                        <div class="p-6 bg-white rounded-lg border-2 border-[var(--primary-color)] shadow-md">
-                                            <h3 class="text-xl font-bold text-[var(--text-primary)]">Presente - Liderazgo e Impacto Continuo</h3>
-                                            <p class="mt-2 text-[var(--text-secondary)]">Hoy, el programa de Ingeniería en Sistemas Computacionales del ITCM es un referente educativo en la región, formando profesionales capaces de liderar la transformación digital. Continuamos evolucionando para enfrentar los desafíos del futuro tecnológico y contribuir al desarrollo social y económico.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- SECCIÓN ELIMINADA DE NOSOTROS (Misión y Visión) -->
-                    <!--
-                    <section class="py-16 mt-12 bg-[var(--accent-color)] rounded-lg">
-                        <div class="container mx-auto px-4">
-                            <div class="grid items-center gap-12 lg:grid-cols-2">
-                                <div>
-                                    <h2 class="text-3xl font-bold tracking-tight text-[var(--secondary-color)] sm:text-4xl">Nuestra Misión y Visión</h2>
-                                    <p class="mt-4 text-lg text-[var(--text-secondary)]">Nuestra misión es cultivar la próxima generación de líderes tecnológicos proporcionando una educación rigurosa y relevante en ingeniería de sistemas computacionales.</p>
-                                    <p class="mt-4 text-lg text-[var(--text-secondary)]">Visualizamos a nuestros graduados como innovadores que impulsan los avances tecnológicos y contribuyen a un mundo conectado e inteligente, siempre con un enfoque ético y socialmente responsable.</p>
-                                </div>
-                                <div class="h-64 rounded-lg bg-cover bg-center shadow-lg lg:h-96" style="background-image: url('https://www.cdmadero.tecnm.mx/images/noticias/2024/agosto/semicon5.jpg')">
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    -->
-
-
-                    <!-- NUEVA SECCIÓN PARAGUAS: Nuestra Comunidad Educativa -->
-                    <section class="py-16 mt-12 bg-white rounded-lg shadow-sm border border-gray-200">
-                        <div class="container mx-auto px-4">
-                            <h2 class="text-3xl font-bold text-center text-[var(--secondary-color)] mb-8">Nuestra Comunidad Educativa</h2>
-                            <p class="text-lg text-[var(--text-secondary)] text-center max-w-4xl mx-auto">
-                                En el ITCM, valoramos profundamente la interacción y el desarrollo integral. Nuestra comunidad se construye sobre la calidad de nuestro profesorado y un ambiente diseñado para inspirar, colaborar y conectar.
+                <section class="py-20">
+                    <div class="container mx-auto px-4 max-w-4xl">
+                        <div class="prose prose-lg mx-auto">
+                            <h2 class="text-3xl font-bold text-[var(--primary-color)] mb-6">Nuestra Misión</h2>
+                            <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-8">
+                                Equipar a hombres y mujeres con una sólida formación bíblica y teológica reformada para
+                                servir fielmente a Cristo y su iglesia,
+                                proporcionando educación teológica accesible y de excelencia que forme líderes
+                                ministeriales comprometidos con la Palabra de Dios.
                             </p>
 
-                            <!-- SUB-SECCIÓN: Nuestro Claustro Docente -->
-                            <div class="mt-12">
-                                <h3 class="text-2xl font-bold text-center text-[var(--primary-color)] mb-6">El Corazón de Nuestra Formación: Nuestro Claustro Docente</h3>
-                                <p class="text-lg text-[var(--text-secondary)] text-center max-w-4xl mx-auto mb-12">
-                                    Contamos con un equipo de profesores excepcionales, incluyendo a nuestro Jefe de Carrera, reconocidos por su amplia trayectoria, experiencia en la industria y profundo conocimiento. Su pasión por la enseñanza se refleja en un ambiente de cercanía que te inspira a aprender, innovar y alcanzar tu máximo potencial. Siempre listos para guiarte, te brindarán los mejores consejos y te inculcarán el amor por la tecnología.
-                                </p>
-                                
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                    <!-- DOCENTE EJEMPLO 1 -->
-                                    <div class="bg-[var(--accent-color)] p-6 rounded-lg shadow-md text-center">
-                                        <!-- INICIO: ESPACIO PARA FOTO REAL DEL DOCENTE -->
-                                        <img src="https://i.pravatar.cc/150?img=30" alt="Foto de Docente 1" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-[var(--primary-color)]">
-                                        <!-- FIN: ESPACIO PARA FOTO REAL -->
+                            <h2 class="text-3xl font-bold text-[var(--primary-color)] mb-6 mt-12">Nuestra Visión</h2>
+                            <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-8">
+                                Ser un seminario teológico reformado de referencia en México, reconocido por formar
+                                líderes ministeriales que manejan con precisión
+                                la Palabra de Dios y viven con integridad, sirviendo fielmente en iglesias locales,
+                                presbiterios e instituciones eclesiásticas.
+                            </p>
 
-                                        <!-- INICIO: ESPACIO PARA NOMBRE Y TÍTULO REALES -->
-                                        <h4 class="text-xl font-bold text-[var(--secondary-color)] mb-1">Dr. Alejandro Ríos</h4>
-                                        <p class="text-sm text-[var(--text-secondary)] mb-3">Líder en Investigación de IA y Machine Learning</p>
-                                        <!-- FIN: ESPACIO PARA NOMBRE Y TÍTULO REALES -->
-
-                                        <!-- INICIO: ESPACIO PARA DESCRIPCIÓN/LOGROS REALES -->
-                                        <p class="text-base text-[var(--text-primary)]">Con una destacada trayectoria en investigación, el Dr. Ríos te guiará en las fronteras de la inteligencia artificial y sus aplicaciones más innovadoras, fomentando tu espíritu crítico.</p>
-                                        <!-- FIN: ESPACIO PARA DESCRIPCIÓN/LOGROS REALES -->
-                                    </div>
-                                    <!-- DOCENTE EJEMPLO 2 -->
-                                    <div class="bg-[var(--accent-color)] p-6 rounded-lg shadow-md text-center">
-                                        <!-- INICIO: ESPACIO PARA FOTO REAL DEL DOCENTE -->
-                                        <img src="https://i.pravatar.cc/150?img=40" alt="Foto de Docente 2" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-[var(--primary-color)]">
-                                        <!-- FIN: ESPACIO PARA FOTO REAL -->
-
-                                        <!-- INICIO: ESPACIO PARA NOMBRE Y TÍTULO REALES -->
-                                        <h4 class="text-xl font-bold text-[var(--secondary-color)] mb-1">Mtra. Sofía Vargas</h4>
-                                        <p class="text-sm text-[var(--text-secondary)] mb-3">Experta en Ciberseguridad y Desarrollo Web Seguro</p>
-                                        <!-- FIN: ESPACIO PARA NOMBRE Y TÍTULO REALES -->
-
-                                        <!-- INICIO: ESPACIO PARA DESCRIPCIÓN/LOGROS REALES -->
-                                        <p class="text-base text-[var(--text-primary)]">La Mtra. Vargas te preparará para construir sistemas seguros y robustos, compartiendo su experiencia en proyectos de gran escala y las mejores prácticas de la industria.</p>
-                                        <!-- FIN: ESPACIO PARA DESCRIPCIÓN/LOGROS REALES -->
-                                    </div>
-                                    <!-- DOCENTE EJEMPLO 3 -->
-                                    <div class="bg-[var(--accent-color)] p-6 rounded-lg shadow-md text-center">
-                                        <!-- INICIO: ESPACIO PARA FOTO REAL DEL DOCENTE -->
-                                        <img src="https://i.pravatar.cc/150?img=60" alt="Foto de Docente 3" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-[var(--primary-color)]">
-                                        <!-- FIN: ESPACIO PARA FOTO REAL -->
-
-                                        <!-- INICIO: ESPACIO PARA NOMBRE Y TÍTULO REALES -->
-                                        <h4 class="text-xl font-bold text-[var(--secondary-color)] mb-1">Ing. Carlos Linares</h4>
-                                        <p class="text-sm text-[var(--text-secondary)] mb-3">Experto en Arquitectura Cloud y Desarrollo Ágil</p>
-                                        <!-- FIN: ESPACIO PARA NOMBRE Y TÍTULO REALES -->
-
-                                        <!-- INICIO: ESPACIO PARA DESCRIPCIÓN/LOGROS REALES -->
-                                        <p class="text-base text-[var(--text-primary)]">El Ing. Linares te enseñará a diseñar e implementar soluciones tecnológicas escalables en la nube, con un enfoque en metodologías ágiles para el desarrollo de proyectos.</p>
-                                        <!-- FIN: ESPACIO PARA DESCRIPCIÓN/LOGROS REALES -->
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- SUB-SECCIÓN: Nuestro Ambiente de Innovación y Aprendizaje -->
-                            <div class="mt-16">
-                                <h3 class="text-2xl font-bold text-center text-[var(--primary-color)] mb-6">Un Ambiente Propicio para el Crecimiento</h3>
-                                <p class="text-lg text-[var(--text-secondary)] text-center max-w-4xl mx-auto mb-12">
-                                    Nuestro campus y sus instalaciones están diseñados para fomentar la creatividad, la colaboración y un aprendizaje práctico y dinámico. Desde laboratorios equipados con tecnología de punta hasta espacios comunes que invitan a la interacción, cada rincón está pensado para potenciar tu experiencia académica y profesional, creando una conexión única entre alumnos y docentes.
-                                </p>
-                                
-                                <div class="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-md bg-cover bg-center" 
-                                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://scontent.ftam1-1.fna.fbcdn.net/v/t39.30808-6/475674592_505734949207237_7075808339865654503_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG4FPlH7f1NtmohBMBJVqKu0PJdm21M-LDQ8l2bbUz4sMfwP3F_w1XLXr1o9vDa7yIdClYXAsIFtDJFXFCzRkpD&_nc_ohc=09nDXBx1LE8Q7kNvwH_Q-Vz&_nc_oc=AdkJotWis58tBqm1TGuXBdY0gNGW_TxUDQ-PIuqclYfkhCitOqdTrWNRSANL4K3tUiU&_nc_zt=23&_nc_ht=scontent.ftam1-1.fna&_nc_gid=JHz-_Nq2HdpVsljpiHVveg&oh=00_AfRDk1KwR01Pe19dNV3amH4GulShwCvU1GaegVXErALKTA&oe=688A05E5');">
-                                    <!-- NOTA PARA TI: Reemplaza la URL de la imagen con una foto real de tus instalaciones (laboratorios, áreas comunes, etc.).
-                                         Asegúrate de que la imagen sea de alta calidad y que el texto siga siendo legible sobre ella. -->
-                                    <div class="absolute inset-0 flex items-center justify-center p-4">
-                                        <p class="text-white text-xl md:text-2xl font-semibold text-center leading-relaxed">
-                                            "Aprende, crea y colabora en un espacio donde la tecnología cobra vida."
+                            <h2 class="text-3xl font-bold text-[var(--primary-color)] mb-6 mt-12">Afiliación
+                                Eclesiástica</h2>
+                            <div class="bg-[var(--cres-cream)] p-8 rounded-lg mb-8">
+                                <div class="flex flex-col md:flex-row items-center gap-6">
+                                    <img src="logo-iglesia-presbiteriana.png" alt="Iglesia Presbiteriana"
+                                        class="h-32 w-auto">
+                                    <div>
+                                        <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
+                                            CRES es el seminario oficial de la <strong>Iglesia Presbiteriana Asociada
+                                                Reformada de México, A.R.</strong>,
+                                            comprometido con la enseñanza fiel de las Sagradas Escrituras y la tradición
+                                            reformada confesional.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!-- NUEVA SECCIÓN: Nuestros Logros Destacados -->
-                    <section class="py-16 bg-[var(--accent-color)] mt-12 rounded-lg">
-                        <div class="container mx-auto px-4">
-                            <h2 class="text-3xl font-bold text-center text-[var(--secondary-color)] mb-8">Nuestros Logros Destacados</h2>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h3 class="text-xl font-semibold text-[var(--primary-color)] mb-3">Acreditación de Calidad</h3>
-                                    <p class="text-[var(--text-secondary)]">Nuestro programa ha sido acreditado por el CACEI, lo que valida la calidad de nuestra enseñanza y el cumplimiento de los más altos estándares educativos en ingeniería.</p>
+                <section class="py-16 bg-white">
+                    <div class="container mx-auto px-4 max-w-6xl">
+                        <h2 class="text-3xl font-bold text-[var(--primary-color)] text-center mb-12">Nuestros Valores
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <div class="text-center p-6">
+                                <div
+                                    class="w-16 h-16 mx-auto mb-4 bg-[var(--primary-color)] rounded-full flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z" />
+                                    </svg>
                                 </div>
-                                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h3 class="text-xl font-semibold text-[var(--primary-color)] mb-3">Éxito en Competencias</h3>
-                                    <p class="text-[var(--text-secondary)]">Nuestros estudiantes y equipos han obtenido reconocimientos y victorias en diversas competencias nacionales e internacionales de programación, robótica y desarrollo de software, demostrando su talento y preparación.</p>
+                                <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Accesibilidad</h3>
+                                <p class="text-[var(--text-secondary)]">Formación teológica al alcance de todos los
+                                    llamados al ministerio</p>
+                            </div>
+
+                            <div class="text-center p-6">
+                                <div
+                                    class="w-16 h-16 mx-auto mb-4 bg-[var(--accent-color)] rounded-full flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                            clip-rule="evenodd" />
+                                    </svg>
                                 </div>
-                                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h3 class="text-xl font-semibold text-[var(--primary-color)] mb-3">Proyectos de Investigación e Innovación</h3>
-                                    <p class="text-[var(--text-secondary)]">Desarrollamos proyectos de investigación con impacto, desde la creación de soluciones inteligentes hasta la exploración de nuevas fronteras en inteligencia artificial y ciencia de datos.</p>
+                                <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Ortodoxia</h3>
+                                <p class="text-[var(--text-secondary)]">Fidelidad a las Sagradas Escrituras y la fe
+                                    reformada</p>
+                            </div>
+
+                            <div class="text-center p-6">
+                                <div
+                                    class="w-16 h-16 mx-auto mb-4 bg-[var(--secondary-color)] rounded-full flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
                                 </div>
-                                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                                    <h3 class="text-xl font-semibold text-[var(--primary-color)] mb-3">Vínculo con la Industria</h3>
-                                    <p class="text-sm text-[var(--text-secondary)]">Mantenemos una fuerte colaboración con empresas del sector tecnológico, facilitando prácticas profesionales, residencias y oportunidades de empleo para nuestros estudiantes y egresados.</p>
+                                <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Superación</h3>
+                                <p class="text-[var(--text-secondary)]">Excelencia académica y crecimiento continuo</p>
+                            </div>
+
+                            <div class="text-center p-6">
+                                <div
+                                    class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] rounded-full flex items-center justify-center">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                        <path
+                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                                    </svg>
                                 </div>
+                                <h3 class="text-xl font-bold text-[var(--text-primary)] mb-2">Liderazgo</h3>
+                                <p class="text-[var(--text-secondary)]">Formando siervos-líderes para la iglesia</p>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                </div>
-            </div>
-        </main>
-
-        
-        <!-- Footer Component -->
-        <div id="footer-placeholder"></div>
+                <section class="py-16 bg-[var(--cres-cream)]">
+                    <div class="container mx-auto px-4 text-center max-w-3xl">
+                        <h2 class="text-3xl font-bold text-[var(--text-primary)] mb-6">¿Quieres Conocer Más?</h2>
+                        <p class="text-lg text-[var(--text-secondary)] mb-8">
+                            Descubre nuestros programas académicos y cómo CRES puede equiparte para el ministerio.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <a href="programas.html"
+                                class="inline-flex items-center justify-center px-8 py-3 bg-[var(--primary-color)] text-white font-semibold rounded-md hover:bg-[#6B1414] transition-colors uppercase tracking-wide">
+                                Ver Programas
+                            </a>
+                            <a href="contacto.html"
+                                class="inline-flex items-center justify-center px-8 py-3 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[#B8984A] transition-colors uppercase tracking-wide">
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div id="footer-placeholder"></div>
+        </div>
     </div>
-</div>
-
-
-
-
-<!-- Component Loader Scripts -->
-<script src="js/components-loader.js"></script>
-<script src="js/menu.js"></script>
+    <script src="js/components-loader.js"></script>
+    <script src="js/menu.js"></script>
 </body>
+
 </html>

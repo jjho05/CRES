@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Programas Académicos - CRES</title>
+    <meta name="description"
+        content="Programas académicos de CRES: Licenciatura Intensiva en Teología (online) y Licenciatura en Artes Ministeriales (presencial).">
+    <link href="logo-cres.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --cres-burgundy: #8B1A1A;
+            --cres-burgundy-dark: #6B1414;
+            --cres-gold: #C9A961;
+            --cres-gold-dark: #B8984A;
+            --cres-navy: #2C3E50;
+            --cres-navy-dark: #1a252f;
+            --cres-cream: #F8F6F1;
+            --cres-gray: #4A4A4A;
+            --cres-gray-light: #E8E6E1;
+            
+            --primary-color: var(--cres-burgundy);
+            --secondary-color: var(--cres-gold);
+            --accent-color: var(--cres-navy);
+            --text-primary: #2C3E50;
+            --text-secondary: #5A6C7D;
+            --background-color: #ffffff;
+            --background-soft: var(--cres-cream);
+            --border-color: var(--cres-gray-light);
+        }
+        body {
+            font-family: "Crimson Text", "Georgia", serif;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", "Georgia", serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+        <div class="flex h-full grow flex-col">
+            <div id="header-placeholder"></div>
+
+            <main class="flex-1">
+                <!-- HERO -->
+                <section class="relative bg-[var(--background-soft)] py-16 text-center">
+                    <div class="container mx-auto px-4 max-w-4xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-4">
+                            PROGRAMAS ACADÉMICOS
+                        </h1>
+                        <p class="text-xl text-[var(--text-secondary)]">
+                            Dos caminos de formación teológica reformada para equipar líderes ministeriales
+                        </p>
+                    </div>
+                </section>
+
+                <!-- PROGRAMAS -->
+                <section class="py-20">
+                    <div class="container mx-auto px-4 max-w-6xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                            <!-- Licenciatura Intensiva en Teología -->
+                            <div
+                                class="bg-white rounded-lg shadow-xl overflow-hidden border border-[var(--border-color)] hover:shadow-2xl transition-shadow">
+                                <div class="p-8">
+                                    <div class="flex justify-center mb-6">
+                                        <img src="logo-licenciatura-intensiva.png"
+                                            alt="Licenciatura Intensiva en Teología" class="h-24 w-auto">
+                                    </div>
+                                    <h2 class="text-3xl font-bold text-[var(--primary-color)] text-center mb-4">
+                                        Licenciatura Intensiva en Teología
+                                    </h2>
+                                    <div class="flex justify-center gap-6 mb-6 text-sm text-[var(--text-secondary)]">
+                                        <span class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            6 semestres
+                                        </span>
+                                        <span class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z" />
+                                            </svg>
+                                            36 materias
+                                        </span>
+                                    </div>
+                                    <div class="text-center mb-6">
+                                        <span
+                                            class="inline-block bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md font-semibold text-sm uppercase tracking-wide">
+                                            Modalidad Online
+                                        </span>
+                                    </div>
+                                    <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+                                        Programa ejecutivo online diseñado para ancianos, diáconos y líderes
+                                        ministeriales que desean profundizar en teología reformada mientras ejercen su
+                                        ministerio.
+                                    </p>
+                                    <ul class="space-y-3 mb-8">
+                                        <li class="flex items-start gap-2 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 text-[var(--secondary-color)] flex-shrink-0 mt-1"
+                                                fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Clases en vivo martes y jueves por la noche</span>
+                                        </li>
+                                        <li class="flex items-start gap-2 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 text-[var(--secondary-color)] flex-shrink-0 mt-1"
+                                                fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Ideal para líderes eclesiásticos en servicio activo</span>
+                                        </li>
+                                        <li class="flex items-start gap-2 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 text-[var(--secondary-color)] flex-shrink-0 mt-1"
+                                                fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Enfoque en Biblia, Teología y Ministerio</span>
+                                        </li>
+                                    </ul>
+                                    <div class="border-t border-[var(--border-color)] pt-6 mb-6">
+                                        <p class="text-sm text-[var(--text-secondary)] mb-2"><strong>Costos:</strong>
+                                        </p>
+                                        <p class="text-[var(--text-secondary)]">$1,000 MN semestral / $1,200 MN mensual
+                                        </p>
+                                    </div>
+                                    <a href="lic-intensiva-teologia.html"
+                                        class="block w-full text-center px-6 py-3 bg-[var(--primary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-colors uppercase tracking-wide">
+                                        Más Información
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Licenciatura en Artes Ministeriales -->
+                            <div
+                                class="bg-white rounded-lg shadow-xl overflow-hidden border border-[var(--border-color)] hover:shadow-2xl transition-shadow">
+                                <div class="p-8">
+                                    <div class="flex justify-center mb-6">
+                                        <img src="logo-artes-ministeriales.png"
+                                            alt="Licenciatura en Artes Ministeriales" class="h-24 w-auto">
+                                    </div>
+                                    <h2 class="text-3xl font-bold text-[var(--primary-color)] text-center mb-4">
+                                        Licenciatura en Artes Ministeriales
+                                    </h2>
+                                    <div class="flex justify-center gap-6 mb-6 text-sm text-[var(--text-secondary)]">
+                                        <span class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            9 semestres
+                                        </span>
+                                        <span class="flex items-center gap-2">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z" />
+                                            </svg>
+                                            68 materias
+                                        </span>
+                                    </div>
+                                    <div class="text-center mb-6">
+                                        <span
+                                            class="inline-block bg-[var(--accent-color)] text-white px-4 py-2 rounded-md font-semibold text-sm uppercase tracking-wide">
+                                            Modalidad Presencial
+                                        </span>
+                                    </div>
+                                    <p class="text-[var(--text-secondary)] mb-6 leading-relaxed">
+                                        Programa presencial de tiempo completo para quienes sienten un llamado especial
+                                        al ministerio pastoral y desean una formación integral y profunda.
+                                    </p>
+                                    <ul class="space-y-3 mb-8">
+                                        <li class="flex items-start gap-2 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 text-[var(--secondary-color)] flex-shrink-0 mt-1"
+                                                fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Dedicación exclusiva de 4.5 años</span>
+                                        </li>
+                                        <li class="flex items-start gap-2 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 text-[var(--secondary-color)] flex-shrink-0 mt-1"
+                                                fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Incluye lenguas bíblicas (Griego y Hebreo)</span>
+                                        </li>
+                                        <li class="flex items-start gap-2 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 text-[var(--secondary-color)] flex-shrink-0 mt-1"
+                                                fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Formación espiritual y práctica ministerial</span>
+                                        </li>
+                                    </ul>
+                                    <div class="border-t border-[var(--border-color)] pt-6 mb-6">
+                                        <p class="text-sm text-[var(--text-secondary)] mb-2"><strong>Próxima
+                                                promoción:</strong></p>
+                                        <p class="text-[var(--text-secondary)]">2026-1 (Inicio: Febrero 2026)</p>
+                                    </div>
+                                    <a href="lic-artes-ministeriales.html"
+                                        class="block w-full text-center px-6 py-3 bg-[var(--primary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-colors uppercase tracking-wide">
+                                        Más Información
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="py-16 bg-[var(--background-soft)]">
+                    <div class="container mx-auto px-4 text-center max-w-3xl">
+                        <h2 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-6">
+                            ¿Tienes Preguntas?
+                        </h2>
+                        <p class="text-lg text-[var(--text-secondary)] mb-8">
+                            Estamos aquí para ayudarte a discernir el camino correcto para tu formación ministerial.
+                        </p>
+                        <a href="contacto.html"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-gold-dark)] transition-colors uppercase tracking-wide shadow-lg">
+                            Solicitar Información
+                        </a>
+                    </div>
+                </section>
+            </main>
+
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+
+    <script src="js/components-loader.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

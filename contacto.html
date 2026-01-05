@@ -4,221 +4,137 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Contacto - ITCM</title>
+    <title>Contacto - CRES</title>
     <meta name="description"
-        content="Ponte en contacto con la carrera de Ingeniería en Sistemas Computacionales del ITCM. Encuentra nuestro teléfono, correo electrónico, ubicación y horario de atención.">
-    <link href="https://www.cdmadero.tecnm.mx/images/favicon.png" rel="icon" type="image/png" />
+        content="Contacta con CRES. Dirección: Gral. Manuel Ávila Camacho 501, Tampico. Tel: 833 127 4030">
+    <link href="logo-cres.png" rel="icon" type="image/png" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Tipografías Oficiales TecNM -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style type="text/tailwindcss">
         :root {
-            --primary-color: #1B396A;
-            --secondary-color: #14305C;
-            --accent-color: #f0f2f4;
-            --text-primary: #000000;
-            --text-secondary: #807F83;
-            --background-color: #ffffff;
-            --border-color: #dce0e5;
+            --cres-burgundy: #8B1A1A; --cres-gold: #C9A961; --cres-navy: #2C3E50;
+            --cres-cream: #F8F6F1; --primary-color: var(--cres-burgundy);
+            --secondary-color: var(--cres-gold); --accent-color: var(--cres-navy);
+            --text-primary: #2C3E50; --text-secondary: #5A6C7D;
         }
-        body {
-            font-family: "Noto Sans", sans-serif;
-        }
-    
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-        }
+        body { font-family: "Crimson Text", "Georgia", serif; font-size: 18px; line-height: 1.7; }
+        h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", "Georgia", serif; font-weight: 700; }
     </style>
 </head>
 
-<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
-    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<body class="bg-white text-[var(--text-primary)]">
+    <div class="relative flex size-full min-h-screen flex-col">
         <div class="flex h-full grow flex-col">
-
-            <!-- Header Component -->
             <div id="header-placeholder"></div>
+            <main class="flex-1">
+                <section class="relative bg-[var(--cres-cream)] py-16 text-center">
+                    <div class="container mx-auto px-4 max-w-4xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-4">CONTACTO</h1>
+                        <p class="text-xl text-[var(--text-secondary)]">Estamos aquí para servirte</p>
+                    </div>
+                </section>
 
-            <!-- CONTENIDO PRINCIPAL -->
-            <main class="flex-grow">
-                <section class="py-16 sm:py-24">
-                    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="grid lg:grid-cols-2 gap-16 items-start">
-                            <!-- SECCIÓN DE INFORMACIÓN DE CONTACTO -->
-                            <div class="space-y-8">
-                                <div class="space-y-4">
-                                    <h1
-                                        class="text-3xl sm:text-4xl font-bold tracking-tighter text-[var(--secondary-color)]">
-                                        Ponte en Contacto</h1>
-                                    <p class="text-lg text-[var(--text-secondary)]">Si tienes alguna pregunta sobre el
-                                        programa de Ingeniería en Sistemas Computacionales, nuestro plan de estudios, o
-                                        el proceso de admisión, no dudes en ponerte en contacto con nosotros. Estamos
-                                        aquí para ayudarte a iniciar tu camino.</p>
+                <section class="py-20">
+                    <div class="container mx-auto px-4 max-w-6xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <!-- Información de Contacto -->
+                            <div>
+                                <h2 class="text-3xl font-bold text-[var(--text-primary)] mb-8">Información de Contacto
+                                </h2>
+
+                                <!-- Oficina Principal -->
+                                <div class="mb-8 p-6 bg-[var(--cres-cream)] rounded-lg">
+                                    <h3 class="text-xl font-bold text-[var(--primary-color)] mb-4">Oficina Seminario
+                                        CRES</h3>
+                                    <div class="space-y-3">
+                                        <p class="flex items-start gap-3 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 mt-1 flex-shrink-0" fill="currentColor"
+                                                viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                            <span>Gral. Manuel Ávila Camacho 501<br>Tampico, México</span>
+                                        </p>
+                                        <p class="flex items-center gap-3 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                            </svg>
+                                            <span>833 127 4030</span>
+                                        </p>
+                                        <p class="flex items-center gap-3 text-[var(--text-secondary)]">
+                                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                <path
+                                                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                            </svg>
+                                            <span class="break-all">comunidadreformada_cres@hotmail.com</span>
+                                        </p>
+                                    </div>
                                 </div>
+
+                                <!-- Contactos por Programa -->
                                 <div class="space-y-6">
-                                    <h2 class="text-2xl font-bold text-[var(--secondary-color)]">Información Directa
-                                    </h2>
-                                    <div class="space-y-4">
-                                        <div class="flex items-start gap-4">
-                                            <div
-                                                class="flex-shrink-0 size-8 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center mt-1">
-                                                <svg fill="currentColor" height="20px" viewBox="0 0 256 256"
-                                                    width="20px" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M222.39,157.83l-48-24a8,8,0,0,0-9.57,1.82l-24.8,32.22c-29.35-15-52.66-38.31-67.65-67.65l32.22-24.8a8,8,0,0,0,1.82-9.57l-24-48A8,8,0,0,0,74.17,16H34.17a8,8,0,0,0-8,8.21A160,160,0,0,0,184,224a8,8,0,0,0,8.21-8V173.83A8,8,0,0,0,222.39,157.83ZM184,208A144.17,144.17,0,0,1,40.22,40H71.26l22.6,45.2-32.55,25a8,8,0,0,0-2.3,10.22,185.74,185.74,0,0,0,76,76,8,8,0,0,0,10.22-2.3l25-32.55,45.2,22.6Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="font-semibold text-[var(--text-primary)]">Teléfono</p><a
-                                                    class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
-                                                    href="tel:+528333574820">(833) 357 4820</a>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-start gap-4">
-                                            <div
-                                                class="flex-shrink-0 size-8 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center mt-1">
-                                                <svg fill="currentColor" height="20px" viewBox="0 0 256 256"
-                                                    width="20px" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M224,48H32a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V56A8,8,0,0,0,224,48Zm-8,16L128,128,40,64ZM216,192H40V74.19l82.59,55.06a8,8,0,0,0,10.82,0L216,74.19Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="font-semibold text-[var(--text-primary)]">Correo Electrónico
-                                                </p><a
-                                                    class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
-                                                    href="mailto:sistemas@cdmadero.tecnm.mx">sistemas@cdmadero.tecnm.mx</a>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-start gap-4">
-                                            <div
-                                                class="flex-shrink-0 size-8 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center mt-1">
-                                                <svg fill="currentColor" height="20px" viewBox="0 0 256 256"
-                                                    width="20px" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M128,24A104,104,0,0,0,24,128c0,70.61,100.1,120.37,101.44,120.93a7.88,7.88,0,0,0,5.12,0C155.9,248.37,232,174.61,232,128A104,104,0,0,0,128,24Zm0,112a36,36,0,1,1,36-36A36,36,0,0,1,128,136Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="font-semibold text-[var(--text-primary)]">Ubicación</p>
-                                                <p class="text-[var(--text-secondary)]">Av. 1o. de Mayo No. 101 Ote.
-                                                    Col. Centro, Cd. Madero, Tam. México. C.P. 89450</p><a
-                                                    class="text-[var(--primary-color)] hover:underline text-sm mt-1 block"
-                                                    href="https://www.google.com/maps/search/Instituto+Tecnologico+de+Ciudad+Madero"
-                                                    target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-start gap-4">
-                                            <div
-                                                class="flex-shrink-0 size-8 bg-[var(--primary-color)] text-white rounded-full flex items-center justify-center mt-1">
-                                                <svg fill="currentColor" height="20px" viewBox="0 0 256 256"
-                                                    width="20px" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM136,80v48a8,8,0,0,1-4.7,7.31l-32,16a8,8,0,0,1-8.6-13.84L120,120V80a8,8,0,0,1,16,0Z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <p class="font-semibold text-[var(--text-primary)]">Horario de Atención
-                                                </p>
-                                                <p class="text-[var(--text-secondary)]">Lunes a Viernes: 9:00 AM - 5:00
-                                                    PM</p>
-                                            </div>
-                                        </div>
+                                    <div class="p-6 border border-gray-200 rounded-lg">
+                                        <h3 class="text-lg font-bold text-[var(--primary-color)] mb-3">Lic. Intensiva en
+                                            Teología</h3>
+                                        <p class="text-sm text-[var(--text-secondary)] mb-2"><strong>Pbro. Lic. Alfonso
+                                                Rivas Castillo</strong><br>Consejero de Alumnos<br>📱 833 202 8572</p>
+                                        <p class="text-sm text-[var(--text-secondary)]"><strong>BA. Christian
+                                                Pickup</strong><br>Decano<br>📱 228 233 3266</p>
+                                    </div>
+
+                                    <div class="p-6 border border-gray-200 rounded-lg">
+                                        <h3 class="text-lg font-bold text-[var(--primary-color)] mb-3">Lic. en Artes
+                                            Ministeriales</h3>
+                                        <p class="text-sm text-[var(--text-secondary)]"><strong>Pbro. Lic. Rubén Abdías
+                                                Perales López</strong><br>Decano Modalidad Escolarizada<br>📱 833 111
+                                            9476</p>
+                                    </div>
+
+                                    <div class="p-6 border border-gray-200 rounded-lg">
+                                        <h3 class="text-lg font-bold text-[var(--primary-color)] mb-3">Rectoría</h3>
+                                        <p class="text-sm text-[var(--text-secondary)]"><strong>Dr. Joel Enrique Almanza
+                                                Amaya</strong><br>Rector Seminario CRES<br>📱 444 443 7544</p>
+                                    </div>
+
+                                    <div class="p-6 border border-gray-200 rounded-lg">
+                                        <h3 class="text-lg font-bold text-[var(--primary-color)] mb-3">Tesorería</h3>
+                                        <p class="text-sm text-[var(--text-secondary)]">📱 833 288 7778</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- FORMULARIO FUNCIONAL CON FORMSUBMIT.CO -->
-                            <div class="bg-white p-8 sm:p-10 rounded-lg shadow-lg border border-[var(--accent-color)]">
-                                <h2 class="text-2xl font-bold text-[var(--secondary-color)] mb-6">Envíanos un Mensaje
-                                </h2>
-
-                                <!-- 
-                                ¡IMPORTANTE! 
-                                1. Reemplaza 'tu-email@dominio.com' con tu correo electrónico.
-                                2. El 'id="contact-form"' es necesario para que el script funcione.
-                            -->
-                                <form id="contact-form" action="https://formsubmit.co/jjho.reivaj05@gmail.com"
-                                    method="POST" class="space-y-6">
-                                    <div>
-                                        <label class="block text-sm font-semibold text-[var(--text-primary)] mb-2"
-                                            for="name">Nombre Completo</label>
-                                        <input
-                                            class="form-input block w-full rounded-lg border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] focus:ring-2 focus:ring-opacity-50 transition-all duration-200 py-3 px-4 bg-gray-50 focus:bg-white"
-                                            id="name" name="name" placeholder="Ingresa tu nombre" type="text"
-                                            required />
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-semibold text-[var(--text-primary)] mb-2"
-                                            for="email">Correo Electrónico</label>
-                                        <input
-                                            class="form-input block w-full rounded-lg border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] focus:ring-2 focus:ring-opacity-50 transition-all duration-200 py-3 px-4 bg-gray-50 focus:bg-white"
-                                            id="email" name="email" placeholder="Ingresa tu correo electrónico"
-                                            type="email" required />
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-semibold text-[var(--text-primary)] mb-2"
-                                            for="subject">Asunto</label>
-                                        <input
-                                            class="form-input block w-full rounded-lg border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] focus:ring-2 focus:ring-opacity-50 transition-all duration-200 py-3 px-4 bg-gray-50 focus:bg-white"
-                                            id="subject" name="subject" placeholder="¿Cómo podemos ayudarte?"
-                                            type="text" required />
-                                    </div>
-                                    <div>
-                                        <label class="block text-sm font-semibold text-[var(--text-primary)] mb-2"
-                                            for="message">Mensaje</label>
-                                        <textarea
-                                            class="form-textarea block w-full rounded-lg border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] focus:ring-2 focus:ring-opacity-50 transition-all duration-200 py-3 px-4 bg-gray-50 focus:bg-white"
-                                            id="message" name="message" placeholder="Escribe tu mensaje aquí..."
-                                            rows="5" required></textarea>
-                                    </div>
-
-                                    <!-- Campos de configuración para FormSubmit -->
-                                    <!-- 1. Redirige a 'gracias.html' tras el envío -->
-                                    <input type="hidden" name="_next" value="gracias.html">
-                                    <!-- 2. Deshabilita la página de CAPTCHA de FormSubmit -->
-                                    <input type="hidden" name="_captcha" value="false">
-                                    <!-- 3. (Opcional) Asunto personalizado para el email que recibes -->
-                                    <input type="hidden" name="_subject"
-                                        value="Nuevo Mensaje de Contacto - Web ISC-ITCM">
-
-                                    <div class="pt-2">
-                                        <button id="submit-btn"
-                                            class="w-full flex justify-center py-4 px-6 border border-transparent rounded-lg shadow-md text-base font-bold text-white bg-[var(--primary-color)] hover:bg-[var(--secondary-color)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)] transform transition-all duration-200 hover:scale-[1.02]"
-                                            type="submit">
-                                            Enviar Mensaje
-                                        </button>
-                                    </div>
-
-                                    <!-- Div para mostrar mensajes de estado (errores, etc.) -->
-                                    <div id="form-status" class="text-center text-sm mt-4"></div>
-                                </form>
+                            <!-- Mapa -->
+                            <div>
+                                <h2 class="text-3xl font-bold text-[var(--text-primary)] mb-8">Ubicación</h2>
+                                <div class="rounded-lg overflow-hidden shadow-lg h-[600px]">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.8!2d-97.8547!3d22.2336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE0JzAxLjAiTiA5N8KwNTEnMTcuMCJX!5e0!3m2!1ses!2smx!4v1234567890"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                                <p class="mt-4 text-sm text-[var(--text-secondary)] text-center">
+                                    Gral. Manuel Ávila Camacho 501, Tampico, México
+                                </p>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
-
-
-            <!-- Footer Component -->
             <div id="footer-placeholder"></div>
         </div>
     </div>
-
-    <!-- SCRIPT DE JAVASCRIPT PARA MENÚ MÓVIL Y FORMULARIO FUNCIONAL -->
-
-
-    <!-- Component Loader Scripts -->
     <script src="js/components-loader.js"></script>
     <script src="js/menu.js"></script>
 </body>

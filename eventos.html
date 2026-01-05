@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Eventos y Capacitación - CRES</title>
+    <meta name="description"
+        content="Eventos de capacitación continua en CRES: Plantación de Iglesias, Consejería Bíblica, Libros Proféticos y más.">
+    <link href="logo-cres.png" rel="icon" type="image/png" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --cres-burgundy: #8B1A1A; --cres-gold: #C9A961; --cres-navy: #2C3E50;
+            --cres-cream: #F8F6F1; --primary-color: var(--cres-burgundy);
+            --secondary-color: var(--cres-gold); --accent-color: var(--cres-navy);
+            --text-primary: #2C3E50; --text-secondary: #5A6C7D;
+        }
+        body { font-family: "Crimson Text", "Georgia", serif; font-size: 18px; line-height: 1.7; }
+        h1, h2, h3, h4, h5, h6 { font-family: "Playfair Display", "Georgia", serif; font-weight: 700; }
+    </style>
+</head>
+
+<body class="bg-white text-[var(--text-primary)]">
+    <div class="relative flex size-full min-h-screen flex-col">
+        <div class="flex h-full grow flex-col">
+            <div id="header-placeholder"></div>
+            <main class="flex-1">
+                <section class="relative bg-[var(--cres-cream)] py-16 text-center">
+                    <div class="container mx-auto px-4 max-w-4xl">
+                        <h1 class="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-4">EVENTOS Y
+                            CAPACITACIÓN</h1>
+                        <p class="text-xl text-[var(--text-secondary)]">Formación continua para el ministerio</p>
+                    </div>
+                </section>
+
+                <section class="py-20">
+                    <div class="container mx-auto px-4 max-w-5xl">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <!-- Evento 1 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                                <div class="bg-gradient-to-r from-[var(--primary-color)] to-[#6B1414] p-6 text-white">
+                                    <h3 class="text-xl font-bold mb-2">Plantación de Iglesias</h3>
+                                    <p class="text-sm opacity-90">Pbro. Esaú Reyes</p>
+                                </div>
+                                <div class="p-6">
+                                    <div class="mb-4">
+                                        <p class="text-sm text-gray-600 mb-1"><strong>Fechas:</strong> 19-23 de enero
+                                        </p>
+                                        <p class="text-sm text-gray-600"><strong>Horario:</strong> 11:00-13:00 /
+                                            15:00-17:00 hrs</p>
+                                    </div>
+                                    <div class="border-t pt-4">
+                                        <p class="text-sm font-semibold text-gray-700 mb-2">Costos:</p>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-[var(--primary-color)] font-bold">Presencial:
+                                                $1,000</span>
+                                            <span class="text-[var(--accent-color)] font-bold">Online: $1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Evento 2 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                                <div class="bg-gradient-to-r from-[var(--accent-color)] to-[#1a252f] p-6 text-white">
+                                    <h3 class="text-xl font-bold mb-2">Principios de Consejería Bíblica</h3>
+                                    <p class="text-sm opacity-90">Pbro. Alfonso Rivas & Mtra. Zabdi Pesina</p>
+                                </div>
+                                <div class="p-6">
+                                    <div class="mb-4">
+                                        <p class="text-sm text-gray-600 mb-1"><strong>Fechas:</strong> 26-30 de enero
+                                        </p>
+                                        <p class="text-sm text-gray-600"><strong>Horario:</strong> 11:00-13:00 /
+                                            15:00-17:00 hrs</p>
+                                    </div>
+                                    <div class="border-t pt-4">
+                                        <p class="text-sm font-semibold text-gray-700 mb-2">Costos:</p>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-[var(--primary-color)] font-bold">Presencial:
+                                                $1,000</span>
+                                            <span class="text-[var(--accent-color)] font-bold">Online: $1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Evento 3 -->
+                            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                                <div class="bg-gradient-to-r from-[var(--secondary-color)] to-[#B8984A] p-6 text-white">
+                                    <h3 class="text-xl font-bold mb-2">Libros Proféticos del AT</h3>
+                                    <p class="text-sm opacity-90">Pbro. Obed Hernández</p>
+                                </div>
+                                <div class="p-6">
+                                    <div class="mb-4">
+                                        <p class="text-sm text-gray-600 mb-1"><strong>Fechas:</strong> 19-30 enero
+                                            (Lun-Vie)</p>
+                                        <p class="text-sm text-gray-600"><strong>Horario:</strong> 09:00-11:00 hrs</p>
+                                    </div>
+                                    <div class="border-t pt-4">
+                                        <p class="text-sm font-semibold text-gray-700 mb-2">Costos:</p>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-[var(--primary-color)] font-bold">Presencial:
+                                                $1,000</span>
+                                            <span class="text-[var(--accent-color)] font-bold">Online: $1,200</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-16 text-center bg-[var(--cres-cream)] p-8 rounded-lg">
+                            <h2 class="text-2xl font-bold text-[var(--text-primary)] mb-4">¿Interesado en Participar?
+                            </h2>
+                            <p class="text-[var(--text-secondary)] mb-6">Contáctanos para más información sobre
+                                inscripciones y detalles de los eventos.</p>
+                            <a href="contacto.html"
+                                class="inline-flex items-center justify-center px-8 py-3 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[#B8984A] transition-colors uppercase tracking-wide">
+                                Contactar
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div id="footer-placeholder"></div>
+        </div>
+    </div>
+    <script src="js/components-loader.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
