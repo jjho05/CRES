@@ -1,6 +1,6 @@
 /**
  * Menu Handler - CRES
- * Versión simplificada con forzado de estilos
+ * Versión con mejor manejo de estados
  */
 
 console.log('🔧 Menu script loaded');
@@ -25,17 +25,17 @@ function initializeMenu() {
 
     console.log('✅ All menu elements found!');
 
+    // Variable para trackear el estado
+    let isMenuOpen = false;
+
     // Toggle del menú con estilos forzados
     menuBtn.onclick = function (e) {
         e.preventDefault();
         e.stopPropagation();
-        console.log('🔘 Menu button clicked');
+        console.log('🔘 Menu button clicked, current state:', isMenuOpen ? 'open' : 'closed');
 
-        const isHidden = mobileMenu.classList.contains('hidden');
-        console.log('Current state:', isHidden ? 'hidden' : 'visible');
-
-        if (isHidden) {
-            // MOSTRAR menú - forzar todos los estilos
+        if (!isMenuOpen) {
+            // MOSTRAR menú
             mobileMenu.classList.remove('hidden');
             mobileMenu.style.display = 'block';
             mobileMenu.style.position = 'fixed';
@@ -48,17 +48,25 @@ function initializeMenu() {
             mobileMenu.style.overflow = 'auto';
 
             menuIconOpen.classList.add('hidden');
+            menuIconOpen.style.display = 'none';
             menuIconClose.classList.remove('hidden');
+            menuIconClose.style.display = 'block';
+
             document.body.style.overflow = 'hidden';
-            console.log('✅ Menu opened with forced styles');
+            isMenuOpen = true;
+            console.log('✅ Menu opened');
         } else {
             // OCULTAR menú
             mobileMenu.classList.add('hidden');
             mobileMenu.style.display = 'none';
 
             menuIconOpen.classList.remove('hidden');
+            menuIconOpen.style.display = 'block';
             menuIconClose.classList.add('hidden');
+            menuIconClose.style.display = 'none';
+
             document.body.style.overflow = '';
+            isMenuOpen = false;
             console.log('✅ Menu closed');
         }
     };
@@ -72,23 +80,31 @@ function initializeMenu() {
             console.log('📍 Link clicked, closing menu');
             mobileMenu.classList.add('hidden');
             mobileMenu.style.display = 'none';
+
             menuIconOpen.classList.remove('hidden');
+            menuIconOpen.style.display = 'block';
             menuIconClose.classList.add('hidden');
+            menuIconClose.style.display = 'none';
+
             document.body.style.overflow = '';
+            isMenuOpen = false;
         });
     });
 
     // Cerrar menú al hacer click fuera
     document.addEventListener('click', function (e) {
-        if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-            if (!mobileMenu.classList.contains('hidden')) {
-                console.log('📍 Clicked outside, closing menu');
-                mobileMenu.classList.add('hidden');
-                mobileMenu.style.display = 'none';
-                menuIconOpen.classList.remove('hidden');
-                menuIconClose.classList.add('hidden');
-                document.body.style.overflow = '';
-            }
+        if (isMenuOpen && !mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+            console.log('📍 Clicked outside, closing menu');
+            mobileMenu.classList.add('hidden');
+            mobileMenu.style.display = 'none';
+
+            menuIconOpen.classList.remove('hidden');
+            menuIconOpen.style.display = 'block';
+            menuIconClose.classList.add('hidden');
+            menuIconClose.style.display = 'none';
+
+            document.body.style.overflow = '';
+            isMenuOpen = false;
         }
     });
 
