@@ -1,14 +1,16 @@
 <header
-    class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] bg-white/95 backdrop-blur-sm px-4 py-4 sm:px-10 shadow-sm">
-    <a href="index.html" class="flex items-center gap-3 transition-opacity hover:opacity-80">
-        <img src="logo-cres.png" alt="Logo CRES" class="h-14 w-auto">
-        <h2 class="text-base sm:text-lg font-bold leading-tight tracking-tight text-[var(--primary-color)]">
-            CRES<br class="hidden sm:block" /><span class="text-sm font-normal text-[var(--text-secondary)]">Seminario
-                Teológico</span>
-        </h2>
+    class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] bg-white/95 backdrop-blur-sm px-4 py-3 sm:px-10 shadow-sm">
+    <a href="index.html" class="flex items-center gap-2 sm:gap-3 transition-opacity hover:opacity-80">
+        <img src="logo-cres.png" alt="Logo CRES" class="h-12 sm:h-14 w-auto">
+        <div class="flex flex-col">
+            <h2 class="text-lg sm:text-xl font-bold leading-tight tracking-tight text-[var(--primary-color)]">
+                CRES
+            </h2>
+            <span class="text-xs sm:text-sm font-normal text-[var(--text-secondary)]">Seminario Teológico</span>
+        </div>
     </a>
     <div class="flex items-center gap-4">
-        <nav class="hidden items-center gap-6 lg:flex">
+        <nav class="hidden items-center gap-6 md:flex">
             <a class="text-sm font-medium text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
                 href="index.html" data-page="index">Inicio</a>
             <a class="text-sm font-medium text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
@@ -23,10 +25,10 @@
                 href="contacto.html" data-page="contacto">Contacto</a>
         </nav>
         <a href="contacto.html"
-            class="hidden lg:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-[var(--primary-color)] rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-colors">
+            class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-[var(--primary-color)] rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-colors">
             Solicitar Información
         </a>
-        <div class="lg:hidden"><button id="menu-btn" type="button"
+        <div class="md:hidden"><button id="menu-btn" type="button"
                 class="text-[var(--primary-color)] transition-transform hover:scale-110 focus:outline-none"><svg
                     id="menu-icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
@@ -37,26 +39,24 @@
                     </path>
                 </svg></button></div>
     </div>
+
+    <!-- Mobile Menu (dentro del header) -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-[72px] left-0 right-0 bottom-0 bg-white z-40">
+        <nav class="flex flex-col items-center justify-center h-full gap-8">
+            <a class="text-2xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
+                href="index.html" data-page-mobile="index">Inicio</a>
+            <a class="text-2xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
+                href="nosotros.html" data-page-mobile="nosotros">Nosotros</a>
+            <a class="text-2xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
+                href="programas.html" data-page-mobile="programas">Programas</a>
+            <a class="text-2xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
+                href="eventos.html" data-page-mobile="eventos">Eventos</a>
+            <a class="text-2xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
+                href="vida-estudiantil.html" data-page-mobile="vida-estudiantil">Vida Estudiantil</a>
+            <a class="text-2xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)]"
+                href="contacto.html" data-page-mobile="contacto">Contacto</a>
+            <img src="logo-iglesia-presbiteriana.png" alt="Iglesia Presbiteriana Asociada Reformada de México"
+                class="h-16 w-auto mt-8">
+        </nav>
+    </div>
 </header>
-<div id="mobile-menu" class="hidden lg:hidden fixed top-[80px] left-0 right-0 bottom-0 bg-white z-40 overflow-y-auto">
-    <nav class="flex flex-col items-center justify-start pt-8 gap-6 px-4">
-        <a class="text-xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)] w-full text-center py-3 border-b border-[var(--border-color)]"
-            href="index.html" data-page-mobile="index">Inicio</a>
-        <a class="text-xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)] w-full text-center py-3 border-b border-[var(--border-color)]"
-            href="nosotros.html" data-page-mobile="nosotros">Nosotros</a>
-        <a class="text-xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)] w-full text-center py-3 border-b border-[var(--border-color)]"
-            href="programas.html" data-page-mobile="programas">Programas</a>
-        <a class="text-xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)] w-full text-center py-3 border-b border-[var(--border-color)]"
-            href="eventos.html" data-page-mobile="eventos">Eventos</a>
-        <a class="text-xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)] w-full text-center py-3 border-b border-[var(--border-color)]"
-            href="vida-estudiantil.html" data-page-mobile="vida-estudiantil">Vida Estudiantil</a>
-        <a class="text-xl font-bold text-[var(--text-secondary)] transition-colors hover:text-[var(--primary-color)] w-full text-center py-3 border-b border-[var(--border-color)]"
-            href="contacto.html" data-page-mobile="contacto">Contacto</a>
-        <a href="contacto.html"
-            class="mt-4 inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-[var(--primary-color)] rounded-md hover:bg-[var(--cres-burgundy-dark)] transition-colors w-full max-w-xs">
-            Solicitar Información
-        </a>
-        <img src="logo-iglesia-presbiteriana.png" alt="Iglesia Presbiteriana Asociada Reformada de México"
-            class="h-20 w-auto mt-6 opacity-80">
-    </nav>
-</div>

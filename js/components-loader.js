@@ -19,11 +19,12 @@
         return '../';
     }
 
-    // Cargar un componente
     async function loadComponent(componentName, placeholderId) {
         const basePath = getBasePath();
-        // Agregar timestamp para evitar caché del navegador
-        const componentPath = `${basePath}components/${componentName}.html?v=${new Date().getTime()}`;
+        // Agregar timestamp ACTUALIZADO para forzar recarga sin caché
+        const timestamp = Date.now();
+        const componentPath = `${basePath}components/${componentName}.html?v=${timestamp}`;
+        console.log('Loading component:', componentPath);
 
         try {
             const response = await fetch(componentPath);
