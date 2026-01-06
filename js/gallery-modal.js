@@ -22,13 +22,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Select images in Vida Estudiantil grid and Nosotros grid
     const galleryImages = document.querySelectorAll('.grid img, .gallery-trigger');
 
-    galleryImages.forEach(img => {
-        img.style.cursor = 'zoom-in';
-        img.addEventListener('click', () => {
-            modalImg.src = img.src;
-            modalImg.alt = img.alt;
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
+    galleryImages.forEach(el => {
+        el.style.cursor = 'zoom-in';
+        el.addEventListener('click', (e) => {
+            // Stop propagation to prevent double-opening if elements are nested
+            e.stopPropagation();
+
+            // Get source: check data-src first, then src
+            let src = el.getAttribute('data-src') || el.getAttribute('src');
+
+            // If still no src, try to extract from background-image (less reliable but fallback)
+            if (!src && el.style.backgroundImage) {
+                const urlMatch = el.style.backgroundImage.match(/url\(['"]?(.*?)['"]?\)/);
+                if (urlMatch) src = urlMatch[1];
+            }
+
+            if (src) {
+                modalImg.src = src;
+                modalImg.alt = el.getAttribute('alt') || 'Imagen CRES';
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                console.error('No image source found for element:', el);
+            }
         });
     });
 
