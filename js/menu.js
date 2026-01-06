@@ -1,6 +1,6 @@
 /**
  * Menu Handler - CRES
- * Espera a que los componentes se carguen antes de inicializar
+ * Versión simplificada con forzado de estilos
  */
 
 console.log('🔧 Menu script loaded');
@@ -25,7 +25,7 @@ function initializeMenu() {
 
     console.log('✅ All menu elements found!');
 
-    // Toggle del menú
+    // Toggle del menú con estilos forzados
     menuBtn.onclick = function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -35,14 +35,30 @@ function initializeMenu() {
         console.log('Current state:', isHidden ? 'hidden' : 'visible');
 
         if (isHidden) {
+            // MOSTRAR menú - forzar todos los estilos
             mobileMenu.classList.remove('hidden');
+            mobileMenu.style.display = 'block';
+            mobileMenu.style.position = 'fixed';
+            mobileMenu.style.top = '72px';
+            mobileMenu.style.left = '0';
+            mobileMenu.style.right = '0';
+            mobileMenu.style.bottom = '0';
+            mobileMenu.style.backgroundColor = 'white';
+            mobileMenu.style.zIndex = '9999';
+            mobileMenu.style.overflow = 'auto';
+
             menuIconOpen.classList.add('hidden');
             menuIconClose.classList.remove('hidden');
-            console.log('✅ Menu opened');
+            document.body.style.overflow = 'hidden';
+            console.log('✅ Menu opened with forced styles');
         } else {
+            // OCULTAR menú
             mobileMenu.classList.add('hidden');
+            mobileMenu.style.display = 'none';
+
             menuIconOpen.classList.remove('hidden');
             menuIconClose.classList.add('hidden');
+            document.body.style.overflow = '';
             console.log('✅ Menu closed');
         }
     };
@@ -55,8 +71,10 @@ function initializeMenu() {
         link.addEventListener('click', function () {
             console.log('📍 Link clicked, closing menu');
             mobileMenu.classList.add('hidden');
+            mobileMenu.style.display = 'none';
             menuIconOpen.classList.remove('hidden');
             menuIconClose.classList.add('hidden');
+            document.body.style.overflow = '';
         });
     });
 
@@ -66,8 +84,10 @@ function initializeMenu() {
             if (!mobileMenu.classList.contains('hidden')) {
                 console.log('📍 Clicked outside, closing menu');
                 mobileMenu.classList.add('hidden');
+                mobileMenu.style.display = 'none';
                 menuIconOpen.classList.remove('hidden');
                 menuIconClose.classList.add('hidden');
+                document.body.style.overflow = '';
             }
         }
     });
