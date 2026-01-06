@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add click event to all gallery images
     // Select images in Vida Estudiantil grid and Nosotros grid
-    const galleryImages = document.querySelectorAll('.grid img');
+    // Select images in Vida Estudiantil grid and Nosotros grid
+    const galleryImages = document.querySelectorAll('.grid img, .gallery-trigger');
 
     galleryImages.forEach(img => {
         img.style.cursor = 'zoom-in';
