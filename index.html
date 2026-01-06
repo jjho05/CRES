@@ -66,20 +66,58 @@
 
             <main class="flex-1">
                 <!-- MAIN HERO -->
-                <section
-                    class="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-cover bg-center bg-no-repeat"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('cres_hero_realistic_1767682414186.png');">
-                    <div class="container mx-auto px-4 text-center text-white relative z-10">
-                        <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                            FORMACIÓN BÍBLICA PARA<br>UNA VIDA DE MINISTERIO
-                        </h2>
-                        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-                            Equipando líderes ministeriales con una sólida formación teológica reformada
-                        </p>
-                        <a href="programas.html"
-                            class="inline-flex items-center justify-center px-8 py-4 bg-[var(--secondary-color)] text-white font-semibold rounded-md hover:bg-[var(--cres-gold-dark)] transition-all transform hover:scale-105 uppercase tracking-wide shadow-xl">
-                            Explorar Programas
-                        </a>
+                <!-- MAIN HERO - COVENANT STYLE -->
+                <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-white">
+                    <!-- Background Image Layer -->
+                    <div class="absolute inset-0 w-full h-full">
+                        <div class="absolute inset-0 bg-cover bg-center md:bg-[position:20%_center] lg:bg-right transition-transform duration-1000"
+                            style="background-image: url('cres_hero_realistic_1767682414186.png');">
+                        </div>
+                    </div>
+
+                    <!-- White Gradient Overlay (Left to Right) -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/20 md:to-transparent w-full md:w-[65%] lg:w-[60%]">
+                    </div>
+
+                    <!-- Content Layer -->
+                    <div class="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center">
+                        <div class="max-w-2xl pt-20 md:pt-0">
+                            <!-- Logo Brand Name (Optional reinforcement) -->
+                            <div class="mb-4 flex items-center gap-3 text-[var(--cres-navy)] opacity-0 animate-fade-in-up"
+                                style="animation-delay: 0.1s;">
+                                <div class="h-1 w-12 bg-[var(--cres-gold)]"></div>
+                                <span class="text-sm font-bold tracking-widest uppercase">Seminario Teológico</span>
+                            </div>
+
+                            <!-- Main Headline -->
+                            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] text-[var(--cres-navy)] mb-6 opacity-0 animate-fade-in-up"
+                                style="font-family: 'Playfair Display', serif; animation-delay: 0.3s; animation-fill-mode: forwards;">
+                                FORMACIÓN BÍBLICA<br>
+                                <span class="text-[#8B1A1A] italic">PARA TODA LA VIDA</span><br>
+                                DE MINISTERIO
+                            </h1>
+
+                            <!-- Subheadline -->
+                            <p class="text-lg md:text-2xl text-[var(--text-secondary)] mb-10 max-w-lg leading-relaxed opacity-0 animate-fade-in-up"
+                                style="animation-delay: 0.5s; animation-fill-mode: forwards;">
+                                Equipando pastores, consejeros y líderes ministeriales con una sólida herencia
+                                reformada.
+                            </p>
+
+                            <!-- CTA Button -->
+                            <div class="flex flex-wrap gap-4 opacity-0 animate-fade-in-up"
+                                style="animation-delay: 0.7s; animation-fill-mode: forwards;">
+                                <a href="programas.html"
+                                    class="inline-flex items-center justify-center px-8 py-4 bg-[var(--cres-gold)] text-white font-bold text-sm tracking-widest rounded-full hover:bg-[var(--cres-gold-dark)] transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl uppercase">
+                                    Explorar Programas
+                                </a>
+                                <a href="nosotros.html"
+                                    class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-[var(--cres-navy)] text-[var(--cres-navy)] font-bold text-sm tracking-widest rounded-full hover:bg-[var(--cres-navy)] hover:text-white transition-all uppercase">
+                                    Conócenos
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
