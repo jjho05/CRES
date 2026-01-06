@@ -17,41 +17,42 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.appendChild(closeBtn);
     document.body.appendChild(modal);
 
-    // Add click event to all gallery images
-    // Select images in Vida Estudiantil grid and Nosotros grid
-    // Select images in Vida Estudiantil grid and Nosotros grid
-    const galleryImages = document.querySelectorAll('.grid img, .gallery-trigger');
+    // Event Delegation for Gallery Images
+    // Handles clicks on any element with .gallery-trigger class or inside .grid images
+    document.body.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.gallery-trigger') || e.target.closest('.grid img');
 
-    galleryImages.forEach(el => {
-        el.style.cursor = 'zoom-in';
-        el.addEventListener('click', (e) => {
-            // Stop propagation to prevent double-opening if elements are nested
+        if (trigger) {
+            e.preventDefault();
             e.stopPropagation();
 
-            // Get source: check data-src first, then src
-            let src = el.getAttribute('data-src') || el.getAttribute('src');
+            console.log('Gallery trigger clicked:', trigger);
 
-            // If still no src, try to extract from background-image (less reliable but fallback)
-            if (!src && el.style.backgroundImage) {
-                const urlMatch = el.style.backgroundImage.match(/url\(['"]?(.*?)['"]?\)/);
+            // Get source: check data-src first, then src
+            let src = trigger.getAttribute('data-src') || trigger.getAttribute('src');
+
+            // Fallback: extract from background-image
+            if (!src && trigger.style.backgroundImage) {
+                const urlMatch = trigger.style.backgroundImage.match(/url\(['"]?(.*?)['"]?\)/);
                 if (urlMatch) src = urlMatch[1];
             }
 
             if (src) {
                 modalImg.src = src;
-                modalImg.alt = el.getAttribute('alt') || 'Imagen CRES';
+                modalImg.alt = trigger.getAttribute('alt') || 'Imagen CRES';
                 modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                document.body.style.overflow = 'hidden';
             } else {
-                console.error('No image source found for element:', el);
+                console.error('No image source found for:', trigger);
             }
-        });
+        }
     });
 
     // Close Modal functions
     const closeModal = () => {
         modal.classList.add('hidden');
-        document.body.style.overflow = ''; // Restore scrolling
+        document.body.style.overflow = '';
+        modalImg.src = ''; // Clear src
     };
 
     closeBtn.addEventListener('click', closeModal);
