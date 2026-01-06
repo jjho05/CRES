@@ -36,22 +36,39 @@
             <div id="header-placeholder"></div>
             <main class="flex-1">
                 <!-- HERO -->
-                <section class="relative bg-gradient-to-r from-[var(--primary-color)] to-[#6B1414] text-white py-20">
-                    <div class="container mx-auto px-4 max-w-5xl">
-                        <div class="flex flex-col md:flex-row items-center gap-8">
-                            <div class="flex-shrink-0">
+                <section
+                    class="relative bg-gradient-to-br from-[var(--primary-color)] via-[#6B1414] to-[var(--accent-color)] text-white py-20 overflow-hidden">
+                    <!-- Decorative pattern -->
+                    <div class="absolute inset-0 opacity-10">
+                        <div class="absolute inset-0"
+                            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+                        </div>
+                    </div>
+                    <div class="container mx-auto px-4 max-w-6xl relative z-10">
+                        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                            <div class="flex-shrink-0 bg-white/10 backdrop-blur-sm p-6 rounded-2xl shadow-2xl">
                                 <img src="logo-licenciatura-intensiva.png" alt="Licenciatura Intensiva"
                                     class="h-32 w-auto">
                             </div>
                             <div class="flex-1 text-center md:text-left">
-                                <h1 class="text-4xl md:text-5xl font-bold mb-4">Licenciatura Intensiva en Teología</h1>
-                                <p class="text-xl opacity-90 mb-6">Formación teológica reformada para líderes en
+                                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">Licenciatura
+                                    Intensiva en Teología</h1>
+                                <p class="text-xl md:text-2xl text-white/90 mb-6">Formación teológica reformada para
+                                    líderes en
                                     servicio activo</p>
-                                <div class="flex flex-wrap justify-center md:justify-start gap-4 text-sm">
-                                    <span class="bg-white/20 px-4 py-2 rounded-md">📚 6 semestres</span>
-                                    <span class="bg-white/20 px-4 py-2 rounded-md">💻 Online ejecutiva</span>
-                                    <span class="bg-white/20 px-4 py-2 rounded-md">📖 36 materias</span>
-                                    <span class="bg-white/20 px-4 py-2 rounded-md">🕐 Martes y Jueves</span>
+                                <div class="flex flex-wrap justify-center md:justify-start gap-3 text-sm md:text-base">
+                                    <span
+                                        class="bg-white/20 backdrop-blur-sm px-5 py-3 rounded-lg font-semibold hover:bg-white/30 transition-all">📚
+                                        6 semestres</span>
+                                    <span
+                                        class="bg-white/20 backdrop-blur-sm px-5 py-3 rounded-lg font-semibold hover:bg-white/30 transition-all">💻
+                                        Online ejecutiva</span>
+                                    <span
+                                        class="bg-white/20 backdrop-blur-sm px-5 py-3 rounded-lg font-semibold hover:bg-white/30 transition-all">📖
+                                        36 materias</span>
+                                    <span
+                                        class="bg-white/20 backdrop-blur-sm px-5 py-3 rounded-lg font-semibold hover:bg-white/30 transition-all">🕐
+                                        Martes y Jueves</span>
                                 </div>
                             </div>
                         </div>
@@ -263,13 +280,14 @@
                 </section>
 
                 <!-- PERFIL DE EGRESO -->
-                <section class="py-16">
+                <section class="py-16 bg-gradient-to-b from-white to-[var(--cres-cream)]">
                     <div class="container mx-auto px-4 max-w-6xl">
-                        <h2 class="text-3xl font-bold text-[var(--primary-color)] mb-8 text-center">Perfil de Egreso
+                        <h2 class="text-3xl md:text-4xl font-bold text-[var(--primary-color)] mb-8 text-center">Perfil
+                            de Egreso
                         </h2>
                         <div
-                            class="bg-gradient-to-r from-[var(--accent-color)] to-[#1a252f] text-white p-8 rounded-lg mb-8">
-                            <p class="text-lg leading-relaxed text-center">
+                            class="bg-gradient-to-r from-[var(--accent-color)] to-[#1a252f] text-white p-8 md:p-10 rounded-xl shadow-2xl mb-12">
+                            <p class="text-lg md:text-xl leading-relaxed text-center text-white/95">
                                 Hombres y mujeres capaces de aplicar conocimientos bíblicos y teológicos a su ministerio
                                 magisterial y
                                 liderazgo eclesiástico, conociendo los desafíos de la iglesia contemporánea y
@@ -278,9 +296,11 @@
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                                <h3 class="text-xl font-bold text-[var(--primary-color)] mb-4">Saberes Conceptuales</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+                            <div
+                                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-[var(--primary-color)] hover:shadow-xl transition-shadow">
+                                <h3 class="text-xl md:text-2xl font-bold text-[var(--primary-color)] mb-4">Saberes
+                                    Conceptuales</h3>
                                 <ul class="space-y-2 text-[var(--text-secondary)]">
                                     <li>• Antiguo Testamento</li>
                                     <li>• Nuevo Testamento</li>
@@ -289,8 +309,10 @@
                                     <li>• Historia del Cristianismo</li>
                                 </ul>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                                <h3 class="text-xl font-bold text-[var(--primary-color)] mb-4">Saberes Procedimentales
+                            <div
+                                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-[var(--secondary-color)] hover:shadow-xl transition-shadow">
+                                <h3 class="text-xl md:text-2xl font-bold text-[var(--primary-color)] mb-4">Saberes
+                                    Procedimentales
                                 </h3>
                                 <ul class="space-y-2 text-[var(--text-secondary)]">
                                     <li>• Interpretación bíblica</li>
@@ -299,8 +321,10 @@
                                     <li>• Idiomas bíblicos</li>
                                 </ul>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-                                <h3 class="text-xl font-bold text-[var(--primary-color)] mb-4">Saberes Actitudinales
+                            <div
+                                class="bg-white p-6 md:p-8 rounded-xl shadow-lg border-l-4 border-[var(--accent-color)] hover:shadow-xl transition-shadow">
+                                <h3 class="text-xl md:text-2xl font-bold text-[var(--primary-color)] mb-4">Saberes
+                                    Actitudinales
                                 </h3>
                                 <ul class="space-y-2 text-[var(--text-secondary)]">
                                     <li>• Compromiso ministerial</li>
