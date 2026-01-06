@@ -1,4 +1,4 @@
-// Simple Mobile Menu - CRES (Fullscreen Overlay)
+// Simple Mobile Menu - CRES (Fullscreen Overlay with Transition)
 console.log('🔧 Loading mobile menu...');
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -28,7 +28,7 @@ function initMenu() {
 
     console.log('✅ Menu elements found!');
 
-    // Toggle menu
+    // Toggle menu with transition
     navToggle.onclick = function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -37,17 +37,27 @@ function initMenu() {
         console.log('Menu toggled:', isHidden ? 'opening' : 'closing');
 
         if (isHidden) {
-            // Abrir menú
+            // Abrir menú con transición
             navMenu.classList.remove('hidden');
+            // Forzar reflow para que la transición funcione
+            navMenu.offsetHeight;
+            navMenu.classList.remove('translate-x-full');
+
             menuIconOpen.classList.add('hidden');
             menuIconClose.classList.remove('hidden');
-            document.body.style.overflow = 'hidden'; // Prevenir scroll
+            document.body.style.overflow = 'hidden';
         } else {
-            // Cerrar menú
-            navMenu.classList.add('hidden');
+            // Cerrar menú con transición
+            navMenu.classList.add('translate-x-full');
+
+            // Esperar a que termine la transición antes de ocultar
+            setTimeout(() => {
+                navMenu.classList.add('hidden');
+            }, 300);
+
             menuIconOpen.classList.remove('hidden');
             menuIconClose.classList.add('hidden');
-            document.body.style.overflow = ''; // Restaurar scroll
+            document.body.style.overflow = '';
         }
     };
 
@@ -55,7 +65,12 @@ function initMenu() {
     const links = navMenu.querySelectorAll('a');
     links.forEach(link => {
         link.onclick = function () {
-            navMenu.classList.add('hidden');
+            navMenu.classList.add('translate-x-full');
+
+            setTimeout(() => {
+                navMenu.classList.add('hidden');
+            }, 300);
+
             menuIconOpen.classList.remove('hidden');
             menuIconClose.classList.add('hidden');
             document.body.style.overflow = '';
