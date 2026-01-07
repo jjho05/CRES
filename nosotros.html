@@ -8,14 +8,15 @@
     <meta name="description"
         content="Conoce CRES - Comunidad Reformada de Estudios Superiores, seminario de la Iglesia Presbiteriana Asociada Reformada de México.">
     <link href="logo-cres.png" rel="icon" type="image/png" />
+    <!-- Optimized font loading -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" media="print" onload="this.media='all'" />
     <link
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" media="print" onload="this.media='all'" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <style type="text/tailwindcss">
@@ -100,8 +101,11 @@
                                     Eclesiástica</h2>
                                 <div class="bg-[var(--cres-cream)] p-6 md:p-8 rounded-lg">
                                     <div class="flex flex-col md:flex-row items-center gap-6">
-                                        <img src="logo-iglesia-presbiteriana.png" alt="Iglesia Presbiteriana"
-                                            class="h-32 w-auto">
+                                        <picture>
+                                            <source srcset="logo-iglesia-presbiteriana.webp" type="image/webp">
+                                            <img src="logo-iglesia-presbiteriana.png" alt="Iglesia Presbiteriana"
+                                                class="h-32 w-auto">
+                                        </picture>
                                         <div>
                                             <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
                                                 CRES es el seminario oficial de la <strong
@@ -205,17 +209,26 @@
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div class="rounded-xl overflow-hidden shadow-lg h-64 md:h-80 group cursor-pointer">
-                                <img src="images/gallery-07.png" alt="Comunidad CRES 1"
-                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <picture>
+                                    <source srcset="images/gallery-07.webp" type="image/webp">
+                                    <img src="images/gallery-07.png" alt="Comunidad CRES 1" loading="lazy"
+                                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                </picture>
                             </div>
                             <div
                                 class="rounded-xl overflow-hidden shadow-lg h-64 md:h-80 md:-mt-8 relative z-10 border-4 border-white group cursor-pointer">
-                                <img src="images/gallery-08.png" alt="Comunidad CRES 2"
-                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <picture>
+                                    <source srcset="images/gallery-08.webp" type="image/webp">
+                                    <img src="images/gallery-08.png" alt="Comunidad CRES 2" loading="lazy"
+                                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                </picture>
                             </div>
                             <div class="rounded-xl overflow-hidden shadow-lg h-64 md:h-80 group cursor-pointer">
-                                <img src="images/gallery-09.png" alt="Comunidad CRES 3"
-                                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <picture>
+                                    <source srcset="images/gallery-09.webp" type="image/webp">
+                                    <img src="images/gallery-09.png" alt="Comunidad CRES 3" loading="lazy"
+                                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -243,9 +256,9 @@
             <div id="footer-placeholder"></div>
         </div>
     </div>
-    <script src="js/components-loader.js"></script>
-    <script src="js/menu.js"></script>
+    <script src="js/components-loader.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </body>
-<script src="js/gallery-modal.js"></script>
+<script src="js/gallery-modal.js" defer></script>
 
 </html>
